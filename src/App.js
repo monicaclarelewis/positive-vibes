@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import Main from "./pages/Main";
 import Navbar from "./components/Navbar";
 import Jokes from './pages/Jokes';
-import InspirationalQuotes from './pages/Quotes';
 import Test from './components/test'
 
 function App() {
