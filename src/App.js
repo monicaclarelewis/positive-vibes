@@ -5,7 +5,7 @@ import Main from "./pages/Main";
 import Navbar from "./components/Navbar";
 import Jokes from './pages/Jokes';
 import Test from './components/test'
-import News from './pages/news';
+import News from './pages/News';
 
 function App() {
   return (
