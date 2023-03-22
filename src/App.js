@@ -8,7 +8,6 @@ import Jokes from './pages/Jokes';
 import News from  './pages/News';
 =======
 import InspirationalQuotes from './pages/Quotes';
->>>>>>> 5976d91be4ce09eab372040e3679b7e34b9aa6ac
 
 function App() {
   return (
@@ -19,11 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/main" element={<Main />} />
             <Route path="/jokes" element={<Jokes />}/>
-<<<<<<< HEAD
-            <Route path="/news" element={<News />}/>
-=======
             <Route path="quotes" element={<InspirationalQuotes />}/>
->>>>>>> 5976d91be4ce09eab372040e3679b7e34b9aa6ac
           </Routes>
       </Router>
     </div>
