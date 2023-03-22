@@ -3,10 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./pages/Home";
 import Main from "./pages/Main";
 import Navbar from "./components/Navbar";
-import Jokes from './pages/Jokes';
-<<<<<<< HEAD
+import Jokes from './pages/Jokes'
 import News from  './pages/News';
-=======
 import InspirationalQuotes from './pages/Quotes';
 
 function App() {
@@ -19,6 +17,7 @@ function App() {
             <Route path="/main" element={<Main />} />
             <Route path="/jokes" element={<Jokes />}/>
             <Route path="quotes" element={<InspirationalQuotes />}/>
+            <Route path="news" element={<news /> }/>
           </Routes>
       </Router>
     </div>
