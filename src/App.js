@@ -4,11 +4,8 @@ import Home from "./pages/Home";
 import Main from "./pages/Main";
 import Navbar from "./components/Navbar";
 import Jokes from './pages/Jokes';
-<<<<<<< HEAD
 import Test from './components/test'
-=======
 import Quote from './pages/Quotes';
->>>>>>> ecc7aab32a918a77e68b186d60f06d0876f7cf78
 import News from './pages/News';
 
 function App() {
@@ -22,6 +19,7 @@ function App() {
             <Route path="/jokes" element={<Jokes />}/>
             <Route path="quotes" element={<Quote />}/>
             <Route path="/news" element={<News /> }/>
+            <Route path="test" element={<test /> }/>
           </Routes>
       </Router>
     </div>
