@@ -22,14 +22,14 @@ axios.request(options).then(function (response) {
 }).catch(function (error) {
 	console.error(error);
 });
-
+  }
 render() {
   return (
       <div>
-          <h1>{this.state.joke}</h1>
+          <h1>{this.state.News}</h1>
       </div>
   )
-}
+  
 
 }    
 }
