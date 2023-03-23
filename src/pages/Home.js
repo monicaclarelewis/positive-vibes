@@ -5,7 +5,7 @@ import "../styles/Home.css"
    return (
     <div className="home">
       <a href="/main">
-        <button class="bg-cyan-700 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded-full happyBtn">
+        <button class="bg-amber-400 hover:bg-amber-500 font-bold py-2 px-4 rounded-full border border border-black cursor-grab happyBtn">
           MAKE ME HAPPY!
         </button>
       </a>
