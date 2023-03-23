@@ -27,5 +27,5 @@ const news = () => {
 
 }    
 }
-
-export default News
+}
+export default News;
