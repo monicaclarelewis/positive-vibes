@@ -23,6 +23,14 @@ axios.request(options).then(function (response) {
 	console.error(error);
 });
 
+render() {
+  return (
+      <div>
+          <h1>{this.state.joke}</h1>
+      </div>
+  )
+}
+
 }    
 }
 
