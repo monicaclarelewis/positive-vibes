@@ -1,0 +1,8 @@
+.navBar {
+    position: sticky;
+    margin-bottom: 20px;
+}
+
+.navLink {
+    padding: 5px;
+}

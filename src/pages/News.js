@@ -17,13 +17,7 @@ class News extends Component {
   };
   componentDidMount() {
 
-axios.request(options).then(function (response) {
-	console.log(response.data);
-}).catch(function (error) {
-	console.error(error);
-});
-  }
-render() {
+const news = () => {
   return (
       <div>
           <h1>{this.state.News}</h1>
@@ -33,6 +27,5 @@ render() {
 
 }    
 }
-
 
 export default News
