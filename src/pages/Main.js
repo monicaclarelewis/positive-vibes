@@ -1,10 +1,10 @@
 import React from 'react'
+import "../styles/Main.css"
 
 function Main() {
   return (
-    <div>
+    <div className="happyPlace">
         <h1> Happy Place! </h1> 
-        {/* Why doesn't this work? */}
     </div>
   )
 }
