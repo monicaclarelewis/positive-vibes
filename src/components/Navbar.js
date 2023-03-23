@@ -4,7 +4,7 @@ import "../styles/Navbar.css";
 
 function Navbar() {
   return (
-<<<<<<< HEAD
+
     <div>
         <Link to="/"> Home </Link>
         <Link to="/Main"> Make me happy! </Link>
@@ -12,7 +12,6 @@ function Navbar() {
         <Link to="/quotes">Inspirational Quotes</Link>
         <Link to="News">Positive-News</Link>
     </div> 
-=======
     <nav className="shadow-md w-full position:fixed top-0 left-0 bg-amber-200 navBar">
       <div className="md:flex items-center justify-between bg-amber-200 py-3 md:px-8 px-6">
         <div className="font-bold text-2xl cursor-grab flex items-center font-[Poppins]">
@@ -25,10 +24,11 @@ function Navbar() {
           <Link className="md:ml-8 text-xl navLink" to="/Main"> Make me happy! </Link>
           <Link className="md:ml-8 text-xl navLink" to="/jokes">Chuck Norris Banter</Link>
           <Link className="md:ml-8 text-xl navLink" to="/quotes">Inspirational Quotes</Link>
+
         </ul>
       </div>
     </nav>
->>>>>>> deaee91080f3dc4ca8024463345cc937fae1e0f1
+
   )
 }
 
