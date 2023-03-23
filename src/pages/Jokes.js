@@ -11,11 +11,6 @@ const chuckNorisApiParams = {
     }
   };
 
-const giphyApiParams = {
-  method: 'GET',
-  url: 'https://api.giphy.com/v1/gifs/random?api_key=G9Nj3xO4cZvZ5m1u8CQ8AJHmzdKZzpV8&tag=chuck+norris&rating=g'
-}
-
 function getRandomChuckNorrisJoke() {
   return axios.request(chuckNorisApiParams)
 }
@@ -26,7 +21,8 @@ function getRandomChuckNorrisImage() {
 
 class Jokes extends Component {
     state = {
-        joke: ""
+        joke: "",
+        src: ""
     };
 
     componentDidMount() {
@@ -35,10 +31,9 @@ class Jokes extends Component {
           const jokeData = res[0]
           const imageData = res[1]
           this.setState({
-            joke: jokeData.data.value
+            joke: jokeData.data.value,
+            src:  imageData.data.data.images.original.url
           })
-          console.log("PIERS ", jokeData)
-          console.log("PIERS ", imageData)
         })
         .catch(err => console.log(err));
     }
@@ -47,6 +42,7 @@ class Jokes extends Component {
         return (
             <div>
                 <h1>{this.state.joke}</h1>
+                <img src={this.state.src} width="500" height="600"/>
             </div>
         )
     }
