@@ -4,7 +4,8 @@ import Home from "./pages/Home";
 import Main from "./pages/Main";
 import Navbar from "./components/Navbar";
 import Jokes from './pages/Jokes';
-import Test from './components/test'
+import Quote from './pages/Quotes';
+import News from './pages/News';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/main" element={<Main />} />
             <Route path="/jokes" element={<Jokes />}/>
-            <Route path="quotes" element={<Test />}/>
+            <Route path="quotes" element={<Quote />}/>
+            <Route path="/news" element={<News /> }/>
           </Routes>
       </Router>
     </div>
