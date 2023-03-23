@@ -1,0 +1,10 @@
+.happyPlace {
+    background-image: url("../assets/backgroundColour.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 650px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
