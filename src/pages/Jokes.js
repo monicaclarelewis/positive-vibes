@@ -42,7 +42,7 @@ class Jokes extends Component {
         return (
             <div>
                 <h1>{this.state.joke}</h1>
-                <img src={this.state.src} width="500" height="600"/>
+                <img src={this.state.src} width="500" height="500" alt=""/>
             </div>
         )
     }
