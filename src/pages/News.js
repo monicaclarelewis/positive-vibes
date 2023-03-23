@@ -11,21 +11,15 @@ const options = {
   }
 };
 
-class News extends Component {
-  state = {
-      News: ""
-  };
-  componentDidMount() {
+axios.request(options).then(function (response) {
+	console.log(response.data);
+}).catch(function (error) {
+	console.error(error);
+});
 
-const news = () => {
-  return (
-      <div>
-          <h1>{this.state.News}</h1>
-      </div>
-  )
+
   
 
-}    
-}
-}
+
+
 export default News;
