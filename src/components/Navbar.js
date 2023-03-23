@@ -4,10 +4,10 @@ import "../styles/Navbar.css";
 
 function Navbar() {
   return (
-    <nav className="shadow-md w-full position:fixed top-0 left-0 navBar">
-      <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
-        <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins]">
-          <span className="text-3xl text-cyan-600 mr-1 pt-2">
+    <nav className="shadow-md w-full position:fixed top-0 left-0 bg-amber-200 navBar">
+      <div className="md:flex items-center justify-between bg-amber-200 py-3 md:px-8 px-6">
+        <div className="font-bold text-2xl cursor-grab flex items-center font-[Poppins]">
+          <span className="text-3xl mr-1 pt-2">
             <ion-icon name="happy-outline"></ion-icon>
           </span>
         </div>
@@ -16,7 +16,6 @@ function Navbar() {
           <Link className="md:ml-8 text-xl navLink" to="/Main"> Make me happy! </Link>
           <Link className="md:ml-8 text-xl navLink" to="/jokes">Chuck Norris Banter</Link>
           <Link className="md:ml-8 text-xl navLink" to="/quotes">Inspirational Quotes</Link>
-
         </ul>
       </div>
     </nav>
