@@ -1,29 +1,13 @@
 import React from 'react';
-import axios from 'axios';
+import InspirationalQuotes from '../components/QuoteCard';
+import Wrapper from '../components/Wrapper'
 
-export default class InspirationalQuotes extends React.Component {
-  state = {
-    persons: []
-  }
-
-  componentDidMount() {
-    axios.get(`https://jsonplaceholder.typicode.com/users`)
-      .then(res => {
-        const persons = res.data;
-        this.setState({ persons });
-      })
-  }
-
-  render() {
-    return (
-      <ul>
-        {
-          this.state.persons
-            .map(person =>
-              <li key={person.id}>{person.name}</li>
-            )
-        }
-      </ul>
-    )
-  }
+function Quote() {
+  return (
+    <Wrapper>
+      <InspirationalQuotes />
+    </Wrapper>
+  )
 }
+
+export default Quote
