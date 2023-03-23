@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { Component } from "react";
 
-const options = {
+const chuckNorisApiParams = {
     method: 'GET',
     url: 'https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random',
     headers: {
@@ -11,19 +11,36 @@ const options = {
     }
   };
 
+const giphyApiParams = {
+  method: 'GET',
+  url: 'https://api.giphy.com/v1/gifs/random?api_key=G9Nj3xO4cZvZ5m1u8CQ8AJHmzdKZzpV8&tag=chuck+norris&rating=g'
+}
+
+function getRandomChuckNorrisJoke() {
+  return axios.request(chuckNorisApiParams)
+}
+
+function getRandomChuckNorrisImage() {
+  return axios.get('https://api.giphy.com/v1/gifs/random?api_key=G9Nj3xO4cZvZ5m1u8CQ8AJHmzdKZzpV8&tag=chuck+norris&rating=g')
+}
+
 class Jokes extends Component {
     state = {
         joke: ""
     };
 
     componentDidMount() {
-        axios.request(options)
+      Promise.all([getRandomChuckNorrisJoke(), getRandomChuckNorrisImage()])
         .then(res => {
-            this.setState({
-              joke: res.data.value
-            })}
-          )
-          .catch(err => console.log(err));
+          const jokeData = res[0]
+          const imageData = res[1]
+          this.setState({
+            joke: jokeData.data.value
+          })
+          console.log("PIERS ", jokeData)
+          console.log("PIERS ", imageData)
+        })
+        .catch(err => console.log(err));
     }
 
     render() {
