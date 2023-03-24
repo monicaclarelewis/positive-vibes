@@ -1,16 +1,17 @@
 import React from 'react'
 import "../styles/Main.css"
 import Jokes from './Jokes'
+import { Card } from "@material-tailwind/react";
 
 function Main() {
   return (
     <div className="happyPlace">
         <div class="flex flex-col md:flex-row">
-          <div>{<Jokes />}</div>
+          <Card>{<Jokes />}</Card>
 
-          <div>ADD API HERE</div>
+          <Card>ADD API HERE</Card>
           
-          <div>ADD API HERE</div>
+          <Card>ADD API HERE</Card>
         </div>
     </div>
   )
