@@ -17,7 +17,7 @@ class News extends Component {
       src: ""
   };
 componentDidMount() {
-  axios.request(newscatcher)
+  axios.get("http://www.kitv.com/story/42196143/to-cap-off-his-amazing-week-elon-musk-just-made-770-million")
   .then(res=> {
     const News = res.data;
     this.setState({News})
