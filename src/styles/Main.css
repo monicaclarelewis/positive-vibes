@@ -4,7 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    min-height: 625px;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
