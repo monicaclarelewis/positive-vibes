@@ -17,20 +17,17 @@ class News extends Component {
       src: ""
   };
 componentDidMount() {
-  Promise.all([getRamdomNews()])
-  .then(res=>{
-    const newsData = res[0]
-    this.setState({
-      News: newsData.data.value,
-    
-    })
+  axios.get('https://reuters-business-and-financial-news.p.rapidapi.com/article-date/01-04-2021')
+  .then(res=> {
+    const News = res.data;
+    this.setState({News})
   })
-   .catch(er => console.log(err));
+   
 }
 render() {
   return (
       <div>
-          <h1>{this.state.joke}</h1>
+          <h1>{this.state.News}</h1>
           <img src={this.state.src} width="500" height="500" alt=""/>
       </div>
   )
