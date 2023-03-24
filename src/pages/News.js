@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from "axios";
 
 
-const options = {
+const newscatcher = {
   method: 'GET',
   url: 'https://reuters-business-and-financial-news.p.rapidapi.com/article-date/01-04-2021',
   headers: {
@@ -17,7 +17,7 @@ class News extends Component {
       src: ""
   };
 componentDidMount() {
-  axios.get('https://reuters-business-and-financial-news.p.rapidapi.com/article-date/01-04-2021')
+  axios.request(newscatcher)
   .then(res=> {
     const News = res.data;
     this.setState({News})
