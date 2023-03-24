@@ -18,7 +18,7 @@ function Navbar() {
           <Link className="md:ml-8 text-xl navLink" to="/Main"> Make me happy! </Link>
           <Link className="md:ml-8 text-xl navLink" to="/jokes">Chuck Norris Banter</Link>
           <Link className="md:ml-8 text-xl navLink" to="/quotes">Inspirational Quotes</Link>
-          <Link className="md:ml-8 text-xl navLink" to="/news">positive-news</Link>
+          <Link className="md:ml-8 text-xl navLink" to="/news">Positive-News</Link>
         </ul>
       </div>
     </nav>
