@@ -4,7 +4,13 @@ import "../styles/Main.css"
 function Main() {
   return (
     <div className="happyPlace">
-        <h1> Happy Place! </h1> 
+        <div class="flex flex-col md:flex-row">
+          <div>ADD API HERE</div>
+
+          <div>ADD API HERE</div>
+          
+          <div>ADD API HERE</div>
+        </div>
     </div>
   )
 }
