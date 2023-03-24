@@ -22,7 +22,7 @@ componentDidMount() {
     const News = res.data;
     this.setState({News})
   })
-   
+   .catch(err => console.log(err));
 }
 render() {
   return (
