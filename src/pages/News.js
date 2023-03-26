@@ -1,40 +1,58 @@
-import React, { Component } from 'react';
+
 import axios from "axios";
+import { useEffect, useState } from 'react';
 
 
-const newscatcher = {
-  method: 'GET',
-  url: 'https://reuters-business-and-financial-news.p.rapidapi.com/article-date/01-04-2021',
-  headers: {
-    accept: 'application/json',
-    'X-RapidAPI-Key': '11f0fa9f76msh717eec8227350d2p15b301jsn2a98089fb824',
-    'X-RapidAPI-Host': 'reuters-business-and-financial-news.p.rapidapi.com'
+
+
+function News() {
+
+  const [newsData, setNewsData] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+
+  //Make api call to news api
+  async function getNewsData() {
+    //Set loading boolean to true so that we know to show loading text
+    setLoading(true);
+
+    //Make news api call using axios
+    const resp = await axios.get("https://newsapi.org/v2/everything?q=news&apiKey=edc9094ac44144e3922d765f10dda632");
+    setNewsData(resp.data.articles);
+
+    //Set loading boolean to false so that we know to show news articles
+    setLoading(false);
   }
-};
-class News extends Component {
-  state = {
-      News: "",
-      src: ""
-  };
-componentDidMount() {
-  axios.get("http://www.kitv.com/story/42196143/to-cap-off-his-amazing-week-elon-musk-just-made-770-million")
-  .then(res=> {
-    const News = res.data;
-    this.setState({News})
-  })
-   .catch(err => console.log(err));
-}
-render() {
-  return (
-      <div>
-          <h1>{this.state.News}</h1>
-          <img src={this.state.src} width="500" height="500" alt=""/>
-      </div>
-  )
-}
-}
 
-  
+  useEffect(() => {
+    getNewsData();
+  }, []);
+
+
+
+  return (
+    <div className="News">
+      Positive-News
+    
+    {newsData.map((newsData, ) => {
+    return (
+      <newsData>
+        title={newsData.title}
+        description={newsData.description}
+        url={newsData.url}
+        urlToImage={newsData.urlToImage}
+      </newsData>
+    )
+    
+    
+      
+        
+  })
+}
+    </div>
+  );
+
+}
 
 
 
