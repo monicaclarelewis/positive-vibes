@@ -33,7 +33,7 @@ function News() {
 
   return (
     <div className=" container d-flex justify-content-center align-items-center flex-column my -3">
-      <h5>Positive-News</h5>
+      <h1>Positive-News</h1>
       <header className="News-header">
         {loading ? "Loading..." :<contanier>
       
