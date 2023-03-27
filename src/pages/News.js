@@ -42,11 +42,10 @@ function News() {
       <div className="d-flex justify-content align-items-center">
       <p>{articles.author}</p> 
       <p>{articles.title}</p>
-      <div className="d-flex justify-content align-items-center"></div>
       <img src={articles.image} alt="/"
       className="img-fluid"
       style={{
-        width: "100%",
+        width: "auto",
         height: "300px",
         objectFit: "cover",
       }}/>
