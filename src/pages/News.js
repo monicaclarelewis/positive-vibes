@@ -19,6 +19,7 @@ function News() {
     //Make news api call using axios
     const resp = await axios.get("https://newsapi.org/v2/everything?q=news&apiKey=edc9094ac44144e3922d765f10dda632");
     setNewsData(resp.data.articles);
+    console.log (resp)
 
     //Set loading boolean to false so that we know to show news articles
     setLoading(false);
@@ -36,12 +37,12 @@ function News() {
       <header className="News-header">
         {loading ? "Loading..." :<contanier>
       
-    {newsData.map((article ) => {
+    {newsData.map((data,articles ) => {
     return (
       <div className="news">
       {/* <p>urlToImage={newsData.urlToImage} alt={""}</p> */}
-      <p>url={article.url}</p>
-      <p>news-title= {article.title}</p>
+      <p>url={data.articles.url}</p>
+      <p>news-title= {data.articles.title}</p>
       {/* <p>news-description={newsData.description}</p> */}
      </div> 
     )
