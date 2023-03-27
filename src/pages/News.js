@@ -42,7 +42,9 @@ function News() {
       <div className="news">
       <p>{articles.author}</p> 
       <p>{articles.title}</p>
-      <p>{articles.url}</p>
+      <a href={articles.url} target="blank">
+        View more
+      </a>
       <p>{articles.publishedAt}</p>
      </div> 
     )
