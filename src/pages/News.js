@@ -32,14 +32,14 @@ function News() {
   
 
   return (
-    <div className="news">
+    <div className="News">
       <h1>Positive-News</h1>
       <header className="News-header">
         {loading ? "Loading..." :<contanier>
       
     {newsData.map((articles ) => {
     return (
-      <div className="nesw">
+      <div className="News">
       <p>{articles.author}</p> 
       <p>{articles.title}</p>
       <img src={articles.image} alt="/"
