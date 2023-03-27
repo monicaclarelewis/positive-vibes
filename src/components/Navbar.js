@@ -16,7 +16,6 @@ function Navbar() {
         <ul className="md:flex md:items-center md:pb-0 pb-12 md:static md:z-auto md:w-auto md:pl-0 pl-9">
           <Link className="md:ml-8 text-xl navLink" to="/"> Home </Link>
           <Link className="md:ml-8 text-xl navLink" to="/Main"> Make me happy! </Link>
-          <Link className="md:ml-8 text-xl navLink" to="/jokes">Chuck Norris Banter</Link>
           <Link className="md:ml-8 text-xl navLink" to="/quotes">Inspirational Quotes</Link>
           <Link className="md:ml-8 text-xl navLink" to="/news">Positive-News</Link>
         </ul>
