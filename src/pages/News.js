@@ -19,7 +19,7 @@ function News() {
     //Make news api call using axios
     const resp = await axios.get("https://newsapi.org/v2/everything?q=news&apiKey=edc9094ac44144e3922d765f10dda632");
     setNewsData(resp.data.articles);
-    console.log (resp)
+    console.log (resp.data.articles)
 
     //Set loading boolean to false so that we know to show news articles
     setLoading(false);
