@@ -32,14 +32,14 @@ function News() {
   
 
   return (
-    <div className=" container d-flex justify-content-center align-items-center flex-column my -3">
+    <div className="news">
       <h1>Positive-News</h1>
       <header className="News-header">
         {loading ? "Loading..." :<contanier>
       
     {newsData.map((articles ) => {
     return (
-      <div className="d-flex justify-content align-items-center">
+      <div className="nesw">
       <p>{articles.author}</p> 
       <p>{articles.title}</p>
       <img src={articles.image} alt="/"
