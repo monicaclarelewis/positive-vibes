@@ -17,7 +17,7 @@ function News() {
     setLoading(true);
 
     //Make news api call using axios
-    const resp = await axios.get('https://gnews.io/api/v4/search?q=positive-news&lang=en&country=us&max=10&apikey=95c1a373cc870063d5fb0df7f2083920');
+    const resp = await axios.get('https://gnews.io/api/v4/search?q=news&lang=en&country=us&max=10&apikey=95c1a373cc870063d5fb0df7f2083920');
     setNewsData(resp.data.articles);
     console.log (resp.data.articles)
 
@@ -32,17 +32,24 @@ function News() {
   
 
   return (
-    <div className="News">
-      <h1>Positive-News</h1>
+    <div className=" container d-flex justify-content-center align-items-center flex-column my -3">
+      <h5>Positive-News</h5>
       <header className="News-header">
         {loading ? "Loading..." :<contanier>
       
     {newsData.map((articles ) => {
     return (
-      <div className="news">
+      <div className="d-flex justify-content align-items-center">
       <p>{articles.author}</p> 
       <p>{articles.title}</p>
-      <img src={articles.image} alt="/"/>
+      <div className="d-flex justify-content align-items-center"></div>
+      <img src={articles.image} alt="/"
+      className="img-fluid"
+      style={{
+        width: "100%",
+        height: "300px",
+        objectFit: "cover",
+      }}/>
       <a href={articles.url} target="blank">
         View more
       </a>
