@@ -36,13 +36,13 @@ function News() {
       <header className="News-header">
         {loading ? "Loading..." :<contanier>
       
-    {newsData.map((newsData, ) => {
+    {newsData.map((article ) => {
     return (
       <div className="news">
-      <p>urlToImage={newsData.urlToImage} alt={""}</p>
-      <p>url={newsData.url}</p>
-      <p>news-title= {newsData.title}</p>
-      <p>news-description={newsData.description}</p>
+      {/* <p>urlToImage={newsData.urlToImage} alt={""}</p> */}
+      <p>url={article.url}</p>
+      <p>news-title= {article.title}</p>
+      {/* <p>news-description={newsData.description}</p> */}
      </div> 
     )
     

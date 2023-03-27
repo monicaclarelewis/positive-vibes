@@ -6,7 +6,7 @@ import { Card } from "@material-tailwind/react";
 function Main() {
   return (
     <div className="happyPlace">
-        <div class="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row">
           <Card>{<Jokes />}</Card>
 
           <Card>ADD API HERE</Card>
