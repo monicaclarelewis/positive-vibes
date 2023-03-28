@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { Component } from "react";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const chuckNorisApiParams = {
     method: 'GET',
@@ -42,7 +43,11 @@ class Jokes extends Component {
         return (
             <div>
                 <h1>{this.state.joke}</h1>
-                <img src={this.state.src} width="500" height="500" alt=""/>
+                <LazyLoadImage
+                  alt=""
+                  height="500"
+                  src={this.state.src}
+                  width="500" /> 
             </div>
         )
     }
