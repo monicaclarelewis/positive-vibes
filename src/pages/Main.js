@@ -7,12 +7,12 @@ import { Card } from "@material-tailwind/react";
 function Main() {
   return (
     <div className="happyPlace">
-        <div class="flex flex-col md:flex-row">
-          <Card>{<Jokes />}</Card>
+        <div class="grid grid-cols-3 gap-4">
+          <Card class="bg-amber-200">{<Jokes />}</Card>
 
-          <Card>{<InspirationalQuotes />}</Card>
+          <Card class="bg-amber-200">{<InspirationalQuotes />}</Card>
           
-          <Card>ADD API HERE</Card>
+          <Card class="bg-amber-200">ADD API HERE</Card>
         </div>
     </div>
   )
