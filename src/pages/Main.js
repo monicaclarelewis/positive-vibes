@@ -1,6 +1,7 @@
 import React from 'react'
 import "../styles/Main.css"
 import Jokes from './Jokes'
+import InspirationalQuotes from '../components/QuoteCard';
 import { Card } from "@material-tailwind/react";
 
 function Main() {
@@ -9,7 +10,7 @@ function Main() {
         <div class="flex flex-col md:flex-row">
           <Card>{<Jokes />}</Card>
 
-          <Card>ADD API HERE</Card>
+          <Card>{<InspirationalQuotes />}</Card>
           
           <Card>ADD API HERE</Card>
         </div>
