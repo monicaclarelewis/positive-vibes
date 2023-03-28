@@ -17,7 +17,7 @@ function News() {
     setLoading(true);
 
     //Make news api call using axios
-    const resp = await axios.get('https://gnews.io/api/v4/search?q=News&lang=en&country=us&max=10&apikey=95c1a373cc870063d5fb0df7f2083920');
+    const resp = await axios.get('https://gnews.io/api/v4/search?q=Funny-News&lang=en&country=us&max=10&apikey=95c1a373cc870063d5fb0df7f2083920');
     setNewsData(resp.data.articles);
     console.log (resp.data.articles)
 
