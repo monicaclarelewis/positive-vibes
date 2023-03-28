@@ -19,7 +19,7 @@ export default class InspirationalQuotes extends React.Component {
     return (
       <div className='card'>
         <div className='img-container'>
-            <img alt="SpongeBob" src="https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014" />
+            <img alt="SpongeBob" src='https://source.unsplash.com/random/400x400' />
         </div>
         <div className="content">
             <ul>
