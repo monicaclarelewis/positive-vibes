@@ -17,17 +17,13 @@ export default class InspirationalQuotes extends React.Component {
 
   render() {
     return (
-      <div className='card'>
-        <div className='img-container'>
-            <img alt="SpongeBob" src='https://source.unsplash.com/random/400x400' />
-        </div>
-        <div className="content">
+        <div>
+            <img alt="SpongeBob" src='https://source.unsplash.com/random/500x500' />
             <ul>
                 <li><span>"</span>{this.state.quote.quote}<span>"</span></li>
                 <li><strong>Author:</strong> {this.state.quote.author}</li>
-            </ul>  
+            </ul> 
         </div>
-      </div>
     )
   }
 }
