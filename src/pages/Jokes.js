@@ -42,12 +42,14 @@ class Jokes extends Component {
     render() {
         return (
             <div>
-                <h1>{this.state.joke}</h1>
+                
                 <LazyLoadImage
+                  className="w-full"
                   alt=""
                   height="500"
                   src={this.state.src}
                   width="500" /> 
+                <p className="text-gray-900 font-bold text-xl mb-2 m-3.5">{this.state.joke}</p>
             </div>
         )
     }
