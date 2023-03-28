@@ -18,7 +18,7 @@ export default class InspirationalQuotes extends React.Component {
   render() {
     return (
         <div>
-            <img alt="SpongeBob" src='https://source.unsplash.com/random/500x500' />
+            <img alt="SpongeBob" src='https://source.unsplash.com/random/500x250' />
             <ul>
                 <li><span>"</span>{this.state.quote.quote}<span>"</span></li>
                 <li><strong>Author:</strong> {this.state.quote.author}</li>
