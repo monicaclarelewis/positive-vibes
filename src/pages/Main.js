@@ -4,6 +4,7 @@ import "../index.css"
 import Jokes from './Jokes'
 import InspirationalQuotes from '../components/QuoteCard';
 import { Card } from "@material-tailwind/react";
+import News from './News';
 
 function Main() {
   return (
@@ -13,7 +14,7 @@ function Main() {
 
           <Card className="bg-amber-200 m-3 p-2">{<InspirationalQuotes />}</Card>
           
-          <Card className="bg-amber-200 m-3 p-2">ADD API HERE</Card>
+          <Card className="bg-amber-200 m-3 p-2">{<News />}</Card>
         </div>
     </div>
   )
