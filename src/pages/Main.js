@@ -11,21 +11,28 @@ import Party from '../components/Confetti/Confetti';
 function Main() {
   return (
     <div className="happyPlace">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <Card className="bg-amber-200 m-3 p-2">{<Jokes />}</Card>
-        <Card className="bg-amber-200 m-3 p-2">{<InspirationalQuotes />}</Card>
-        <Card className="bg-amber-200 m-3 p-2">{<News />}</Card>
-      </div>
-      <a href="/main">
-        <button className="bg-amber-400 hover:bg-amber-500 font-bold py-2 px-4 rounded-full border border border-black cursor-grab absolute inset-x-0 bottom-0 w-48 moreBtn">
-          MORE HAPPINESS!
-        </button>
-      </a>
-      <div>
-      <Party />
+      <div >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <Card className="bg-amber-200 m-3 p-2">{<Jokes />}</Card>
+          <Card className="bg-amber-200 m-3 p-2">{<InspirationalQuotes />}</Card>
+          <Card className="bg-amber-200 m-3 p-2">{<News />}</Card>
+        </div>
+
+        <div className="container py-10 px-10 mx-0 min-w-full flex flex-col items-center">
+          <h2 className="text-5xl mb-3 text-black">Contact Us</h2>
+          <p className="text-black">Kickstart your career in BioPharma with the Mendeleev Institute right now</p>
+          <button className="bg-purple-900 text-white hover:bg-blue-400 font-bold py-2 px-4 mt-3 rounded">Learn More</button>
+        </div>
+     
+        <div>
+          <Party />
+        </div>
+      
       </div>
     </div>
   )
 }
 
 export default Main
+
+
