@@ -16,7 +16,7 @@ function News() {
   async function getNewsData() {
 
     //Make news api call using axios
-    const resp = await axios.get('https://gnews.io/api/v4/search?q=Positive&lang=en&country=uk&max=10&apikey=22368411cccbb728603f8ed1e55714e1');
+    const resp = await axios.get('https://gnews.io/api/v4/search?q=Positive&lang=en&country=uk&max=10&apikey=95c1a373cc870063d5fb0df7f2083920');
     const randomIndex = Math.floor(Math.random() * resp.data.articles.length);
     const randomArticle = resp.data.articles[randomIndex];
     
