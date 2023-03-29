@@ -13,12 +13,8 @@ function Navbar() {
             <ion-icon name="happy-outline"></ion-icon>
           </span>
         </div>
-        <ul className="md:flex md:items-center md:pb-0 pb-12 md:static md:z-auto md:w-auto md:pl-0 pl-9">
-          <Link className="md:ml-8 text-xl navLink" to="/"> Home </Link>
-          <Link className="md:ml-8 text-xl navLink" to="/Main"> Make me happy! </Link>
-          
-
-
+        <ul className="md:flex md:items-center md:static md:z-auto md:w-auto ">
+          <Link className="text-3xl navLink" to="/"> <ion-icon name="home-outline"></ion-icon> </Link>
         </ul>
       </div>
     </nav>
