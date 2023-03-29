@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Main from "./pages/Main";
 import Navbar from "./components/Navbar";
 import News from './pages/News';
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/news" element={<News /> }/>
         
           </Routes>
+          <Footer />
       </Router>
     </div>
   );
