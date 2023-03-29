@@ -4,6 +4,7 @@ import "../index.css"
 import Jokes from './Jokes'
 import InspirationalQuotes from '../components/QuoteCard';
 import { Card } from "@material-tailwind/react";
+import { ReactFloatingBalloons } from 'react-floating-balloons';
 
 function Main() {
   return (
@@ -14,6 +15,13 @@ function Main() {
           <Card className="bg-amber-200 m-3 p-2">{<InspirationalQuotes />}</Card>
           
           <Card className="bg-amber-200 m-3 p-2">ADD API HERE</Card>
+
+          <ReactFloatingBalloons
+            count={10}
+            msgText="Happy!"
+            colors={['red', 'white', 'blue']}
+            popVolumeLevel={0.1}
+          />
         </div>
     </div>
   )
