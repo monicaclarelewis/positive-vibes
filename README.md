@@ -1,6 +1,6 @@
 # Positive Vibes
 
-https://app.netlify.com/sites/nimble-heliotrope-2ce452/overview
+https://nimble-heliotrope-2ce452.netlify.app/
 
 
 ## Description
